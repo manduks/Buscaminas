@@ -44,7 +44,7 @@ Ext.define('App.view.GridPanel', {
 			case 4: img = 'flag.png'; break;
 			default: img = 'btnblue.png';break;
 		}
-		return '&lt;img src="resources/images/'+img+'" width="24"&gt;';
+		return '<img src="resources/images/'+img+'" width="24">';
 	},
 	buildStore:function(){ //creamos nuestro store que contendra cada una de las entidades de nuestro tablero
 		var me = this, store;

@@ -17,7 +17,7 @@ Ext.define('App.view.GridPanel', {
 		this.on('cellclick',me.validateMine,this); // evento que se dispara cuando se da click sobre alguna posible mina
 	},
 	validateMine:function(table,td,cellIndex,rec,tr,rowIndex){
-		if(rec.get('data'+cellIndex)){ // si existe mina la explotamos
+		if(rec.get('data'+cellIndex) === 1){ // si existe mina la explotamos
 			rec.data['data'+cellIndex] = 3;
 			Ext.Msg.alert(':(','kaboooom!.');
 		}
